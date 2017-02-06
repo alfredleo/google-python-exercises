@@ -51,11 +51,10 @@ def not_bad(s):
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
   # +++your code here+++
-  a_front = a[:-(len(a)/2)]
-  a_back = a[-(len(a)/2):]
-  b_front = b[:-(len(b)/2)]
-  b_back = b[-(len(b)/2):]
-  return a_front + b_front + a_back + b_back
+  # upside down division
+  a_middle = -(-len(a)/2)
+  b_middle = -(-len(b)/2)
+  return a[:a_middle] + b[:b_middle] + a[a_middle:] + b[b_middle:]
 
 
 # Simple provided test() function used in main() to print
