@@ -25,7 +25,7 @@
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
   # +++your code here+++
-  return
+  return 'Number of donuts: %s' % (count)
 
 
 # B. both_ends
