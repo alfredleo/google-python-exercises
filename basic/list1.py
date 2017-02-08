@@ -38,8 +38,13 @@ def match_ends(words):
 # before combining them.
 def front_x(words):
   # +++your code here+++
-  return
-
+  x_lists = []
+  normal = []
+  for word in words:
+    if len(word) > 0 and word[0] == 'x':
+      x_lists.append(word)
+    else: normal.append(word)
+  return sorted(x_lists) + sorted(normal)
 
 
 # C. sort_last
