@@ -51,7 +51,7 @@ def not_bad(s):
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
   # +++your code here+++
-  # upside down division
+  # upside-down division for ceil integer division imitation
   a_middle = -(-len(a)/2)
   b_middle = -(-len(b)/2)
   return a[:a_middle] + b[:b_middle] + a[a_middle:] + b[b_middle:]
